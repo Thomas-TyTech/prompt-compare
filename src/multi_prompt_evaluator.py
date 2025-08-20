@@ -11,7 +11,6 @@ from dataclasses import dataclass, asdict
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from api_test_harness import APITester, DatabaseManager, TestQuestion
 from enhanced_link_validation import EnhancedLinkValidator, ComprehensiveTester
-from test_question_generator import ResidentAssistantQuestionGenerator
 
 @dataclass
 class PromptVersion:
@@ -40,7 +39,6 @@ class MultiPromptEvaluator:
         
         self.api_tester = APITester(api_endpoint, auth_header, database_manager)
         self.link_validator = EnhancedLinkValidator()
-        self.question_generator = ResidentAssistantQuestionGenerator()
         
         self.current_session: Optional[EvaluationSession] = None
         self.results_by_prompt: Dict[str, Any] = {}
@@ -418,18 +416,10 @@ def main():
                 user_persona=q.get('user_persona', 'general')
             ))
     else:
-        print(f"🎯 Generating {args.num_questions} {args.question_type} questions")
-        generator = ResidentAssistantQuestionGenerator()
-        if args.question_type == 'comprehensive':
-            questions = generator.generate_questions(args.num_questions)
-        else:
-            questions = generator.generate_focused_test_set(args.question_type, args.num_questions)
-        
-        questions_data = [asdict(q) for q in questions]
-        questions_file = f"generated_questions_{args.question_type}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-        with open(questions_file, 'w', encoding='utf-8') as f:
-            json.dump(questions_data, f, indent=2, ensure_ascii=False)
-        print(f"💾 Generated questions saved to: {questions_file}")
+        print("❌ No questions file provided. Please provide a questions JSON file using --questions parameter.")
+        print("Example format:")
+        print('[{"id": "Q001", "question": "Your question?", "category": "general", "complexity": "basic"}]')
+        return 1
     
     session = evaluator.create_evaluation_session(args.name, args.description, questions)
     
