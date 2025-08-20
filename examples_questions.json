@@ -1,0 +1,122 @@
+[
+  {
+    "id": "Q001",
+    "question": "What's the status of my appeal?",
+    "category": "legal",
+    "complexity": "basic"
+  },
+  {
+    "id": "Q002",
+    "question": "Can I reschedule my hearing?",
+    "category": "legal",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "Q003",
+    "question": "What is my case number or hearing number?",
+    "category": "legal",
+    "complexity": "basic"
+  },
+  {
+    "id": "Q004",
+    "question": "Do you call me for the hearing?",
+    "category": "legal",
+    "complexity": "basic"
+  },
+  {
+    "id": "Q005",
+    "question": "What do I need to bring to the hearing?",
+    "category": "legal",
+    "complexity": "basic"
+  },
+  {
+    "id": "Q006",
+    "question": "The judge did not call me for my hearing, what happens next or what should I do?",
+    "category": "legal",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "Q007",
+    "question": "I missed my hearing. Can I reschedule my hearing?",
+    "category": "legal",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "Q008",
+    "question": "My appeal was dismissed, I never got the Notice of hearing, what do I do now?",
+    "category": "legal",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "Q009",
+    "question": "Has the judge made a decision on my appeal yet?",
+    "category": "legal",
+    "complexity": "basic"
+  },
+  {
+    "id": "Q010",
+    "question": "How can I withdraw from my case?",
+    "category": "legal",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "Q011",
+    "question": "Why were my benefits cancelled?",
+    "category": "legal",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "Q012",
+    "question": "Am I supposed to call in for prehearing?",
+    "category": "legal",
+    "complexity": "basic"
+  },
+  {
+    "id": "Q013",
+    "question": "I received a dismissal letter, has my hearing been dismissed?",
+    "category": "legal",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "Q014",
+    "question": "I got this Dismissal Notice, I've never got a Hearing Notice, what do I do?",
+    "category": "legal",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "Q015",
+    "question": "My attorney will not return my calls, I want to know what's going on with my appeal.",
+    "category": "legal",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "Q016",
+    "question": "Am I limited to who and how many I may bring to the hearing?",
+    "category": "legal",
+    "complexity": "basic"
+  },
+  {
+    "id": "Q017",
+    "question": "I have evidence for my hearing, what do I do with it?",
+    "category": "legal",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "Q018",
+    "question": "When is my hearing?",
+    "category": "legal",
+    "complexity": "basic"
+  },
+  {
+    "id": "Q019",
+    "question": "I want to appear in person for my hearing, how do I change my telephonic hearing to a face-to-face hearing?",
+    "category": "legal",
+    "complexity": "intermediate"
+  },
+  {
+    "id": "Q020",
+    "question": "I need a lawyer/legal counsel for my hearing, can you assign one to me for my hearing?",
+    "category": "legal",
+    "complexity": "intermediate"
+  }
+]
